@@ -10,6 +10,7 @@ untuk soal 1 dibagi menjadi 3 sub-soal, dimana untuk sub-soal pertama diminta :
 
 
 hasil1=$(awk -F $'\t'  'BEGIN{ Flag=1 }
+
 NR>1{ reg[$13]+=$21 }
 END{ for(i in reg)
 { if(Flag == 1)
