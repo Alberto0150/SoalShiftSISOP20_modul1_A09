@@ -6,7 +6,7 @@
 Source code **[soal1.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal1/soal1.sh)**
 
 Pada soal 1 dibagi menjadi 3 sub-soal, dimana untuk setiap sub-soal diminta :
-*Mentukan wilayah bagian (region) mana yang memiliki keuntungan (profit) paling sedikit
+* Mentukan wilayah bagian (region) mana yang memiliki keuntungan (profit) paling sedikit
 
 ```
 hasil1=$(awk -F $'\t'  'BEGIN{ Flag=1 }
@@ -53,3 +53,5 @@ END{ for(i in prod)
         { print  prod[i] "," i }
 }' Sample-Superstore.tsv | sort -n | head -10 | awk -F ',' '{print $2}'
 '''
+---
+## Soal 2
