@@ -52,6 +52,6 @@ NR>1{ if ($11 == state1 || $11 == state2 )
 END{ for(i in prod)
         { print  prod[i] "," i }
 }' Sample-Superstore.tsv | sort -n | head -10 | awk -F ',' '{print $2}'
-'''
+```
 ---
 ## Soal 2
