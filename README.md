@@ -5,6 +5,6 @@
 ## Soal 1
 > 
 
-#### untuk soal 1 dibagi menjadi 3 sub-soal, dimana untuk sub-soal pertama diminta :
+untuk soal 1 dibagi menjadi 3 sub-soal, dimana untuk sub-soal pertama diminta :
 -mentukan wilayah bagian (region) mana yang memiliki keuntungan (profit) paling
 sedikit
