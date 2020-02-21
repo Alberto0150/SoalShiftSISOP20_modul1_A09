@@ -109,3 +109,23 @@ done
 
 echo $random > $bisa.txt
 ```
+
+## Soal 3
+> Source Code
+> **[soal3.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal3/Soal3.sh)**
+
+Pada soal ini dibagi menjadi 3 sub-tugas yang diantara lainnya menggunakan wget, crontab , dan ..., dimana terbagi menjadi:
+
+* 3a
+pada soal diberikan perintah untuk mendownload foto sebanyak 28 kali oleh karena itu saya menggunakan looping untuk mendownload dan menamainya
+```
+for i in $(seq 28); do
+	wget -a "wget.log" "https://loremflickr.com/320/240/cat" -O "/home/adam/SISOP/pdkt_kusuma_$i"
+done
+```
+
+* 3b
+pada soal ini diminta membuat crontab untuk mendownload setiap 8 jam dimulai dari jam 06:05 setiap hari kecuali sabtu
+```
+5 6-23/8 * * 1-5,7 /home/adam/SISOP/soal3.sh
+```
