@@ -129,3 +129,6 @@ pada soal ini diminta membuat crontab untuk mendownload setiap 8 jam dimulai dar
 ```
 5 6-23/8 * * 1-5,7 /home/adam/SISOP/soal3.sh
 ```
+
+* 3c
+untuk soal 3c saya belum sempat mengerjakan karena saya merasa kekurangan waktu untuk memahami dan mengerjakan soal
