@@ -59,8 +59,8 @@ END{ for(i in prod)
 
 ## Soal 2
  > Source Code 
- > **[soal2.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/Soal2.sh)**
- > **[p2dekripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2dekripsi.sh)**
+ > **[soal2.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/Soal2.sh)** ,
+ > **[p2dekripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2dekripsi.sh)** ,
  > **[p2enkripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2enkripsi.sh)**
  
 Pada soal ini dibagi menjadi 4 sub-tugas, yaitu:
