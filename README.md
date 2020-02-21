@@ -3,11 +3,11 @@
 #### ALBERTO SANJAYA 05111840000150
 ---
 
-## Soal 1
+## Soal 1 
  > Source code 
  > **[soal1.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal1/soal1.sh)**
 
-Pada soal 1 dibagi menjadi 3 sub-tugas, dimana untuk setiap sub-tugas diminta :
+Pada soal 1 dibagi menjadi 3 sub-tugas yang memiliki tujuan utama agar dapat mengambil keuntungan yang paling sedikit berdasarkan "Sample-Superstore.tsv" , dimana untuk setiap sub-tugas diminta :
 * Mentukan wilayah bagian (region) mana yang memiliki keuntungan (profit) paling sedikit
 
 ```
@@ -63,7 +63,7 @@ END{ for(i in prod)
  > **[p2dekripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2dekripsi.sh)** ,
  > **[p2enkripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2enkripsi.sh)**
  
-Pada soal ini dibagi menjadi 4 sub-tugas, yaitu:
+Pada soal ini dibagi menjadi 4 sub-tugas yang memanfaatkan rumus Caesar Cipher, dimana terbagi menjadi:
 * Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka.
 * Menyimpan password acak tersebut pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan HANYA berupa alphabet.
  ```
