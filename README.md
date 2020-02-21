@@ -60,8 +60,8 @@ END{ for(i in prod)
 ## Soal 2
  > Source Code 
  > **[soal2.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/Soal2.sh)** ,
- > **[p2dekripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2dekripsi.sh)** ,
- > **[p2enkripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2enkripsi.sh)**
+ > **[p2dekripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/soal2_dekripsi.sh)** ,
+ > **[p2enkripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/soal2_enkripsi.sh)**
  
 Pada soal ini dibagi menjadi 4 sub-tugas yang memanfaatkan rumus Caesar Cipher, dimana terbagi menjadi:
 * Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka.
