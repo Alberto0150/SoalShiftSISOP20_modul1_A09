@@ -1,11 +1,13 @@
 # SoalShiftSISOP20_modul1_A09
 #### ADAM ABELARD GARIBALDI 05111840000125
 #### ALBERTO SANJAYA 05111840000150
+---
 
 ## Soal 1
-Source code **[soal1.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal1/soal1.sh)**
+ > Source code 
+ > **[soal1.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal1/soal1.sh)**
 
-Pada soal 1 dibagi menjadi 3 sub-soal, dimana untuk setiap sub-soal diminta :
+Pada soal 1 dibagi menjadi 3 sub-tugas, dimana untuk setiap sub-tugas diminta :
 * Mentukan wilayah bagian (region) mana yang memiliki keuntungan (profit) paling sedikit
 
 ```
@@ -54,4 +56,58 @@ END{ for(i in prod)
 }' Sample-Superstore.tsv | sort -n | head -10 | awk -F ',' '{print $2}'
 ```
 ---
+
 ## Soal 2
+ > Source Code 
+ > **[soal2.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/Soal2.sh)**
+ > **[p2dekripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2dekripsi.sh)**
+ > **[p2enkripsi.sh](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/Soal2/p2enkripsi.sh)**
+ 
+Pada soal ini dibagi menjadi 4 sub-tugas, yaitu:
+* Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka.
+* Menyimpan password acak tersebut pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan HANYA berupa alphabet.
+ ```
+ #!/bin/bash
+#generate password
+berkas=$1 
+filename="${berkas%.*}"
+random=`<  /dev/urandom tr -dc A-Za-z0-9 | head -c28`
+jam=`date "+%k"`;
+
+echo $random > $filename.txt
+
+for loop in $(seq 25); do
+        if [ $loop -eq $jam ]
+          then 
+           bisa=`echo $filename | tr $(printf %${I}s | tr ' ' '.' )\A-Za-z  N-ZA-Mn-za-m`
+        fi
+done
+
+echo $random > $bisa.txt
+ ```
+* Mengenkripsi file
+```
+#!/bin/bash
+for loop in $(seq 25); do
+	if [ $loop -eq $jam ]
+	  then
+	  bisa=`echo $filename | tr $(printf %${loop}s | tr ' ' '.')\A-Za-z N-ZA-Mn-za-m`
+	fi
+done
+echo $random > $bisa.txt
+```
+* Mendekripsi file
+```
+#!/bin/bash
+
+#dekripsi
+
+for loop in $(seq 25); do
+	if [ $loop -eq $jam ]
+	  then
+	   bisa=`echo $filename | tr $(printf %${I}s | tr ' ' '.')\N-ZA-Mn-za-m A-Za-z`
+	fi
+done
+
+echo $random > $bisa.txt
+```
