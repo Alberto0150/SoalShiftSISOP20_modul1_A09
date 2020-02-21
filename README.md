@@ -66,28 +66,28 @@ END{ for(i in prod)
 Pada soal ini dibagi menjadi 4 sub-tugas yang memanfaatkan rumus Caesar Cipher, dimana terbagi menjadi:
 * Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil, dan angka.
 * Menyimpan password acak tersebut pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan HANYA berupa alphabet.
+ 
+ command untuk membuat file txt.
  ```
- #!/bin/bash
-#generate password
-berkas=$1 
+ berkas=$1 
 filename="${berkas%.*}"
-random=`<  /dev/urandom tr -dc A-Za-z0-9 | head -c28`
-jam=`date "+%k"`;
-
-echo $random > $filename.txt
-
-for loop in $(seq 25); do
-        if [ $loop -eq $jam ]
-          then 
-           bisa=`echo $filename | tr $(printf %${I}s | tr ' ' '.' )\A-Za-z  N-ZA-Mn-za-m`
-        fi
-done
-
-echo $random > $bisa.txt
- ```
-* Mengenkripsi file
 ```
-#!/bin/bash
+command untuk men-generate random password
+```
+random=`<  /dev/urandom tr -dc A-Za-z0-9 | head -c28`
+```
+```
+echo $random > $filename.txt
+```
+
+* Mengenkripsi file
+
+untuk mendapatkan jam saat file dibuat maka gunakan fungsi ini
+```
+jam=`date "+%k"`;
+```
+lalu melakukan looping selama 25 lalu saat loop sudah sama dengan jam yang didapatkan maka melakukan enkripsi
+```
 for loop in $(seq 25); do
 	if [ $loop -eq $jam ]
 	  then
@@ -97,11 +97,9 @@ done
 echo $random > $bisa.txt
 ```
 * Mendekripsi file
+
+lalu melakukan looping selama 25 lalu saat loop sudah sama dengan jam yang didapatkan maka melakukan enkripsi
 ```
-#!/bin/bash
-
-#dekripsi
-
 for loop in $(seq 25); do
 	if [ $loop -eq $jam ]
 	  then
