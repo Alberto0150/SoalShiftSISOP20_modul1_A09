@@ -55,6 +55,8 @@ END{ for(i in prod)
         { print  prod[i] "," i }
 }' Sample-Superstore.tsv | sort -n | head -10 | awk -F ',' '{print $2}'
 ```
+
+![alt text]()
 ---
 
 ## Soal 2
