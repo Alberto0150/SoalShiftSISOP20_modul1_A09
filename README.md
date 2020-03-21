@@ -56,7 +56,11 @@ END{ for(i in prod)
 }' Sample-Superstore.tsv | sort -n | head -10 | awk -F ',' '{print $2}'
 ```
 > masalah yang ditemui pada soal ini adalah ketika jawaban yang keluar berbeda.
+
+
 ![alt text](https://github.com/Alberto0150/SoalShiftSISOP20_modul1_A09/blob/master/hasilsoal1.png)
+
+
 ---
 
 ## Soal 2
